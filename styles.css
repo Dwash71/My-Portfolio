@@ -316,10 +316,11 @@ header.sticky {
 
 .portfolio-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(330px, auto));
   align-items: center;
   gap: 2.5rem;
   margin-bottom: 5rem;
+  margin-top: 2rem;
 }
 .row {
   position: relative;
@@ -329,7 +330,8 @@ header.sticky {
 }
 
 .row img {
-  width: 100%;
+  width: 400px;
+  height: 250px;
   border-radius: 8px;
   display: block;
   transition: transform 0.5s;
