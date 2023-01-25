@@ -65,6 +65,20 @@ span {
   font-weight:500;
   margin: 0 25px;
   transition: all 0.45s ease;
+  position: relative;
+}
+
+.navlist a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ececec;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-in-out;
 }
 
 .navlist a:hover,
@@ -72,6 +86,10 @@ a.active {
   color: var(--main-color);
 }
 
+.navlist a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 #menu-icon {
   font-size: 35px;
   color: var(--text-color);
