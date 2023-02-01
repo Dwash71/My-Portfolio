@@ -78,7 +78,7 @@ span {
   left: 0;
   background-color: #ececec;
   transform-origin: bottom left;
-  transition: transform 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .navlist a:hover,
@@ -613,8 +613,10 @@ form textarea {
   .navlist a:hover {
     color: var(--main-color);
   }
+  
   .navlist a.active {
     color: var(--text-color);
+
   }
   .navlist.open {
     top: 100%;
